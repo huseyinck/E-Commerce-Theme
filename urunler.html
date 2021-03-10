@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/top.css" type="text/css" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Demo</title>
+  <link href="css/urunler.css" type="text/css" rel="stylesheet" />
+  <link href="css/range-slider.css" type="text/css" rel="stylesheet" />
+  <link href="css/kategori.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">E-Market</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">AnaSayfa <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="urunler.html">Ürünler</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Kategori
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="dizustu.html">Dizüstü</a>
+            <a class="dropdown-item" href="kulaklık.html">Kulaklık</a>
+            <a class="dropdown-item" href="telefon.html">Telefon</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletisim</a>
+        </li>
+
+
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+      <!-- DUZELTİLİCEK (ON CLİK OLUNCA AÇILICAK EKLENCEK)-->
+
+        <a href="giris.html" class="btn btn-danger" style=" margin-left: 30px;"> Giriş Yap</a>
+        <a href="kayit.html" class="btn btn-warning" style=" margin-left: 20px;"> Kayıt Ol</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="color: red;" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i style="color:red" class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu sepet" aria-labelledby="navbarDropdown">
+          <div class="" href="dizustu.html">
+            <table class="table table-bordered table-hover">
+              <tr>
+                <td><img src="http://www.notebookadresi.com/image/data/2-9351.jpg" style="width: 50px;" alt=""></td>
+                <td>Sony SVF152 Beyaz Cover + Bezel Set<br> 2555₺</td>
+                <td><button class="btn btn-danger">Sil</button></td>
+              </tr>
+              <tr>
+                <td><img src="http://www.notebookadresi.com/image/data/2-9351.jpg" style="width: 50px;" alt=""></td>
+                <td>Sony SVF152 Beyaz Cover + Bezel Set<br> 2555₺</td>
+                <td><button class="btn btn-danger">Sil</button></td>
+              </tr>
+              <tr>
+                <td><img src="http://www.notebookadresi.com/image/data/2-9351.jpg" style="width: 50px;" alt=""></td>
+                <td>Sony SVF152 Beyaz Cover + Bezel Set<br> 2555₺</td>
+                <td><button class="btn btn-danger">Sil</button></td>
+              </tr>
+            </table>
+            <a href="sepet.html" class="btn btn-success float-right">Sepete Git</a>
+          </div>
+        </div>
+      </li>
+      <!-- DUZELTİLİCEK-->
+    </div>
+
+  </nav>
+
+  <!--filtre-->
+  <div class="col-xl-3 col-md-3 col-sm-5 col-xs-12" style="float: left;">
+
+
+
+
+    <div class="range-bar col-md-12"
+      style=" margin-top: 50px; margin-left: 0px; border-style:solid; border-width: 1px 1px 0px; border-color: grey; padding-left: 10px; padding-right: 10px; padding-bottom: 25px; border-radius:5px; border-color: #d5d5d5; ">
+
+      <h2 style="text-align: center; margin-top: 10px;">Fiyat aralığı </h2>
+
+      <form class="mb-3 mt-3" style="padding: 10px">
+
+        <input type="number" class="form-control col-md-5 float-left" min="0" placeholder="Min">
+        &nbsp;
+        <input type="number" class="form-control col-md-5 float-right" min="1" placeholder="Max">
+
+      </form>
+
+
+    </div>
+
+
+
+    <div class="kategori" style="height: 100%;">
+      <div class="container"
+        style="border-style:solid; border-width: 1px 1px 1px; border-color: grey; border-radius: 3px; border-color: #d5d5d5; ">
+        <div class="k_ad"><b>Kategori</b></div>
+        <label class="container"> Telefon
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> Dizüstü
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Kulaklık
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> Telefon
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> Dizüstü
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Kulaklık
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+
+
+        <h3>Marka</h3>
+        <label class="container"> Asus
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> Monster
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> JBL
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> Xiaomi
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> Huwai
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> Samsung
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="buton" style=" margin-top: 15%">
+        <center><button class="filtrele"
+            style="background-color: rgb(230, 103, 103); width: 100px; height: 50px; border-radius: 5px; border:0px;outline: none; color: white;">Filtrele</button>
+        </center>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img
+      src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/517247301530177259-512.png" height="100%"
+      width="100%"></button>
+
+
+
+
+
+  <!--urunler-->
+  <div class="col-md-9 col-lg-9 col-sm-7 col-xs-12"
+    style="height:auto; overflow:hidden; margin-top: 50px; border: solid 1px #d5d5d5; border-radius: 5px;">
+    <!--urun-->
+    <div class="container">
+      <div class="row">
+        <!--urun1-->
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style="text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="http://www.turkiyekenthaber.com/images/upload/10560362184754_1.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Huawei P30 Pro 128 GB (Huawei Türkiye Garantili)
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+              &nbsp; &nbsp; <del style="color: gray;"> 4799 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 2799 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="http://www.notebookadresi.com/image/data/2-9351.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Sony SVF152 Beyaz Cover + Bezel Set
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+              &nbsp; &nbsp; <del style="color: gray;"> 3599 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 2555 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="https://www.bulmamgerek.com/imajlar/ilanresim/xiaomi-redmi-airdots-tws-bluetooth-5-0-k-62.jpg"
+                height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Xiaomi Redmi Airdots Tws Bluetooth 5.0 Kulaklık
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+
+              &nbsp; &nbsp; <del style="color: gray;"> 399 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 180 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+
+        <!--urun2-->
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="http://www.turkiyekenthaber.com/images/upload/10560362184754_1.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Huawei P30 Pro 128 GB (Huawei Türkiye Garantili)
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+              &nbsp; &nbsp; <del style="color: gray;"> 4799 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 2799 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="http://www.notebookadresi.com/image/data/2-9351.jpg" height="100%" width="100%">
+            </div>
+            <div class="urun_yazi">
+              Sony SVF152 Beyaz Cover + Bezel Set
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+              &nbsp; &nbsp; <del style="color: gray;"> 3599 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 2555 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="https://www.bulmamgerek.com/imajlar/ilanresim/xiaomi-redmi-airdots-tws-bluetooth-5-0-k-62.jpg"
+                height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Xiaomi Redmi Airdots Tws Bluetooth 5.0 Kulaklık
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+
+              &nbsp; &nbsp; <del style="color: gray;"> 399 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 180 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+
+        <!--urun3-->
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="http://www.turkiyekenthaber.com/images/upload/10560362184754_1.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Huawei P30 Pro 128 GB (Huawei Türkiye Garantili)
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+              &nbsp; &nbsp; <del style="color: gray;"> 4799 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 2799 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+
+
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+            <img src="http://www.notebookadresi.com/image/data/2-9351.jpg" height="100%" width="100%">
+          </div>
+
+          <div class="urun_yazi">
+            Sony SVF152 Beyaz Cover + Bezel Set
+          </div>
+
+          <div class="urun_fiyat" style="  ">
+            &nbsp; &nbsp; <del style="color: gray;"> 3599 TL</del>
+            <br>
+            <b style="font-size: 25px;">&nbsp; 2555 TL</b>
+            </br>
+          </div>
+
+          <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+            <button class="btn btn-danger">Sepete ekle</button>
+            <button class="btn btn-success">SATIN AL</button>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="https://www.bulmamgerek.com/imajlar/ilanresim/xiaomi-redmi-airdots-tws-bluetooth-5-0-k-62.jpg"
+                height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Xiaomi Redmi Airdots Tws Bluetooth 5.0 Kulaklık
+            </div>
+
+            <div class="urun_fiyat">
+              &nbsp; &nbsp; <del style="color: gray;"> 399 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 180 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+
+        <!--urun4-->
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+            <img src="http://www.turkiyekenthaber.com/images/upload/10560362184754_1.jpg" height="100%" width="100%">
+          </div>
+
+          <div class="urun_yazi">
+            Huawei P30 Pro 128 GB (Huawei Türkiye Garantili)
+          </div>
+
+          <div class="urun_fiyat" style="  ">
+            &nbsp; &nbsp; <del style="color: gray;"> 4799 TL</del>
+            <br>
+            <b style="font-size: 25px;">&nbsp; 2799 TL</b>
+            </br>
+          </div>
+
+          <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+            <button class="btn btn-danger">Sepete ekle</button>
+            <button class="btn btn-success">SATIN AL</button>
+          </div>
+          </a>
+        </div>
+
+
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="http://www.notebookadresi.com/image/data/2-9351.jpg" height="100%" width="100%">
+            </div>
+            <div class="urun_yazi">
+              Sony SVF152 Beyaz Cover + Bezel Set
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+              &nbsp; &nbsp; <del style="color: gray;"> 3599 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 2555 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="col-xl-3 col-md-4 col-sm-6 bosluk">
+          <a href="urun_sayfası.html" style=" text-decoration:none; color: black;">
+            <div class="urun_resim" style=" background-color: red; width: 100%; margin-top:8px;">
+              <img src="https://www.bulmamgerek.com/imajlar/ilanresim/xiaomi-redmi-airdots-tws-bluetooth-5-0-k-62.jpg"
+                height="100%" width="100%">
+            </div>
+
+            <div class="urun_yazi">
+              Xiaomi Redmi Airdots Tws Bluetooth 5.0 Kulaklık
+            </div>
+
+            <div class="urun_fiyat" style="  ">
+              &nbsp; &nbsp; <del style="color: gray;"> 399 TL</del>
+              <br>
+              <b style="font-size: 25px;">&nbsp; 180 TL</b>
+              </br>
+            </div>
+
+            <div class="sepete_ekle" style="  height: 16%; width: 100%;">
+              <button class="btn btn-danger">Sepete ekle</button>
+              <button class="btn btn-success">SATIN AL</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style="background-color: rgb(51, 51, 51); width: 100%; height:180px; margin-top: 15px;">
+
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row">
+
+
+        
+        <div class="footer-copyright text-center py-3" style="color: white; margin-top:50px; margin-left: 37%;">© 2020
+          Copyright:
+          <a href="https://hckajans.com/"> Hüseyin Çetinkaya</a>
+        </div>
+       
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/multi_item.js"></script>
+  <script src="js/top.js"></script>
+  <script>
+    var btnSelam = document.getElementById("ekle");
+    btnSelam.onclick = function () {
+      window.alert("Ürün Sepetinize Eklendi");
+    }
+  </script>
+</body>
+
+</html>

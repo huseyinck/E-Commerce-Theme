@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/urunler.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Demo</title>
+  <style>
+    .single-chart {
+      width: 20%;
+      justify-content: space-around;
+    }
+
+    .circular-chart {
+
+      margin: 10px auto;
+      max-width: 80%;
+      max-height: 250px;
+
+    }
+
+    .circle-bg {
+      fill: none;
+      stroke: #dedddd;
+      stroke-width: 3.2;
+
+    }
+
+    .circle {
+      fill: none;
+      stroke-width: 3.0;
+      stroke-linecap: round;
+
+
+    }
+
+    .card:hover .circle {
+      animation: progress 0.5s ease-out forwards;
+    }
+
+
+
+
+    .circular-chart.yellow .circle {
+      stroke: #d83227;
+    }
+
+
+    .percentage {
+      fill: yellow;
+      font-family: sans-serif;
+      font-size: 1em;
+      text-anchor: middle;
+      font-weight: bold;
+    }
+
+    .percentage-1 {
+      fill: #8e8e8e;
+      font-family: sans-serif;
+      font-size: 0.5em;
+      text-anchor: middle;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">E-Market</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">AnaSayfa <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="urunler.html">Ürünler</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Kategori
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="dizustu.html">Dizüstü</a>
+            <a class="dropdown-item" href="kulaklık.html">Kulaklık</a>
+            <a class="dropdown-item" href="telefon.html">Telefon</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletisim</a>
+        </li>
+
+
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+      <!-- DUZELTİLİCEK (ON CLİK OLUNCA AÇILICAK EKLENCEK)-->
+
+        <a href="giris.html" class="btn btn-danger" style=" margin-left: 30px;"> Giriş Yap</a>
+        <a href="kayit.html" class="btn btn-warning" style=" margin-left: 20px;"> Kayıt Ol</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="color: red;" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i style="color:red" class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu sepet" aria-labelledby="navbarDropdown">
+          <div class="" href="dizustu.html">
+            <table class="table table-bordered table-hover">
+              <tr>
+                <td><img src="http://www.notebookadresi.com/image/data/2-9351.jpg" style="width: 50px;" alt=""></td>
+                <td>Sony SVF152 Beyaz Cover + Bezel Set<br> 2555₺</td>
+                <td><button class="btn btn-danger">Sil</button></td>
+              </tr>
+              <tr>
+                <td><img src="http://www.notebookadresi.com/image/data/2-9351.jpg" style="width: 50px;" alt=""></td>
+                <td>Sony SVF152 Beyaz Cover + Bezel Set<br> 2555₺</td>
+                <td><button class="btn btn-danger">Sil</button></td>
+              </tr>
+              <tr>
+                <td><img src="http://www.notebookadresi.com/image/data/2-9351.jpg" style="width: 50px;" alt=""></td>
+                <td>Sony SVF152 Beyaz Cover + Bezel Set<br> 2555₺</td>
+                <td><button class="btn btn-danger">Sil</button></td>
+              </tr>
+            </table>
+            <a href="sepet.html" class="btn btn-success float-right">Sepete Git</a>
+          </div>
+        </div>
+      </li>
+      <!-- DUZELTİLİCEK-->
+    </div>
+
+  </nav>
+  <div class="container">
+
+
+
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12"
+      style=" border: solid 1px #d5d5d5;  border-radius: 5px; float: left; padding: 0px;">
+      <center>
+        <div class="baslık" style="font-size:20px; margin-top: 10px;">Huawei P30 Pro</div>
+        <div class="col-8" style=" margin-top: 10px;">
+
+          <img src="http://www.turkiyekenthaber.com/images/upload/10560362184754_1.jpg" height="100%" width="100%">
+          <hr>
+        </div>
+
+        <div class="single-chart img-imdb">
+          <svg viewBox="0 0 36 36" class="circular-chart yellow">
+            <path class="circle-bg" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <path class="circle" stroke-dasharray="58, 100" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+
+            <text x="18" y="20" class="percentage-1">Puan</text>
+          </svg>
+        </div>
+
+
+
+          <div class="baslık" style="background-color:#ff493c; ">Huawei P30 Pro</div>
+        <ul class="list-group" style="float: left;">
+          <li class="list-group-item">Ön Kamera</li>
+          <li class="list-group-item">RAM Kapasitesi</li>
+          <li class="list-group-item">Dahili Hafıza</li>
+          <li class="list-group-item">Pil Gücü</li>
+          <li class="list-group-item">Ekran Boyutu</li>
+        </ul>
+        <ul class="list-group" style="overflow: hidden;">
+          <li class="list-group-item">128 GB</li>
+          <li class="list-group-item">6 GB RAM</li>
+          <li class="list-group-item">5260 mAh</li>
+          <li class="list-group-item">6,47 inç</li>
+          <li class="list-group-item">64 MP + 8 MP + 2 MP + 2 MP</li>
+        </ul>
+      </center>
+
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12"
+      style="height:auto; border: solid 1px #d5d5d5;  border-radius: 5px; overflow:hidden;padding: 0px;">
+
+        <center>
+        <div class="baslık" style="font-size:20px; margin-top: 10px;">Huawei P30 Pro</div>
+        <div class="col-8" style=" margin-top: 10px;">
+
+          <img src="http://www.turkiyekenthaber.com/images/upload/10560362184754_1.jpg" height="100%" width="100%">
+          <hr>
+        </div>
+
+        <div class="single-chart img-imdb">
+          <svg viewBox="0 0 36 36" class="circular-chart yellow">
+            <path class="circle-bg" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <path class="circle" stroke-dasharray="58, 100" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+
+            <text x="18" y="20" class="percentage-1">Puan</text>
+          </svg>
+        </div>
+
+
+
+        <div class="baslık" style="background-color:#ff493c; ">Huawei P30 Pro</div>
+        <ul class="list-group" style="float: left;">
+          <li class="list-group-item">Ön Kamera</li>
+          <li class="list-group-item">RAM Kapasitesi</li>
+          <li class="list-group-item">Dahili Hafıza</li>
+          <li class="list-group-item">Pil Gücü</li>
+          <li class="list-group-item">Ekran Boyutu</li>
+        </ul>
+        <ul class="list-group" style="overflow: hidden;">
+          <li class="list-group-item">128 GB</li>
+          <li class="list-group-item">6 GB RAM</li>
+          <li class="list-group-item">5260 mAh</li>
+          <li class="list-group-item">6,47 inç</li>
+          <li class="list-group-item">64 MP + 8 MP + 2 MP + 2 MP</li>
+        </ul>
+      </center>
+
+    </div>
+
+
+    
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="col-lg-12" style="background-color: rgb(51, 51, 51); height:190px; color: white; text-align: center; padding-top: 30px; margin-top: 25px;">
+    © 2020 Copyright:
+    <a href="https://hckajans.com/"> Hüseyin Çetinkaya</a>
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/multi_item.js"></script>
+</body>
+
+</html>
